@@ -41,7 +41,6 @@ body {
   position: absolute;
   z-index: 15;
   padding: 3rem;
-  display: none;
   align-items: center;
   justify-content: center;
   top: 0;
@@ -49,6 +48,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
+  color: red;
+  display: none;
 }
 .city {
   font-size: 4rem;

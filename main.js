@@ -18,9 +18,8 @@ async function fetchData() {
     } catch (error) {
         console.error("===Error=== " + error);
         const errorInfo = document.querySelector('.error-info');
-        errorInfo.style.color = 'red';
-        errorInfo.style.display = "flex";
         errorInfo.innerText = error.message;
+        errorInfo.style.display = "flex";
     } finally {
         const spinner = document.querySelector('.lds-spinner');
         spinner.classList.add('hidden');
