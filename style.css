@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+:root{
+  --main-color:#1e48aa;
+  --secondary-color:#6dd5fa;
+}
+
 *,
 ::before,
 ::after {
@@ -14,7 +19,7 @@ body {
   font-size: 1.6em;
   min-height: 100vh;
   font-family: Lato, Helvetica, sans-serif;
-  background: linear-gradient(45deg, #1e48aa, #6dd5fa, #ffffff);
+  background: linear-gradient(45deg, var(--main-color), var(--secondary-color), #ffffff);
   color: #333;
   padding-top: 10rem;
 }
@@ -98,7 +103,7 @@ body {
   width: 6px;
   height: 18px;
   border-radius: 20%;
-  background: #1e48aa;
+  background: var(--main-color);
 }
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);
